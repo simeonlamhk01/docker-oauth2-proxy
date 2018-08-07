@@ -3,8 +3,8 @@ FROM alpine:3.4
 ENV APP_PKGS="ca-certificates"
 ENV BUILD_PKGS="wget"
 
-ENV OAUTH2_PROXY_VERSION="2.2.0"
-ENV OAUTH2_PROXY_PKG="oauth2_proxy-${OAUTH2_PROXY_VERSION}.linux-amd64.go1.8.1" \
+ENV OAUTH2_PROXY_VERSION="2.2"
+ENV OAUTH2_PROXY_PKG="oauth2_proxy-${OAUTH2_PROXY_VERSION}.0.linux-amd64.go1.8.1" \
     OAUTH2_PROXY_SHA="1c16698ed0c85aa47aeb80e608f723835d9d1a8b98bd9ae36a514826b3acce56"
 RUN apk update && \
     apk upgrade && \
